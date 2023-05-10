@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 20 }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ " /assets/css/main.css" | relative_url }}">
+    {% seo %}
+</head>
+
+<body>
+    <header>
+        <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+                <li><a href="{{ site.baseurl }}/categories.html">Categories</a></li>
+                <li><a href="{{ site.baseurl }}/archive.html">Archive</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1>{{ page.title }}</h1>
+                <p class="post-meta">
+                    <span class="author">{{ page.author }}</span>
+                    <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
+                </p>
+            </header>
+            {{ content }}
+        </article>
+    </main>
+    <footer>
+        <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
