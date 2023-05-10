@@ -1,4 +1,10 @@
-theme: minima
-title: Siddhesh Life
-author: Siddhesh Thakur
-description: Blog
+title: My Blog about stuff that makes me think
+description: A blog about all things that i think about
+theme: jekyll-theme-minimal
+baseurl: "/"
+permalink: /:year/:month/:day/:title.html
+author:
+  name: Siddhesh Thakur
+  email: sid.cre8er@gmail.com 
+  twitter_username: geeks_sid
+  github_username:  geeks_sid
