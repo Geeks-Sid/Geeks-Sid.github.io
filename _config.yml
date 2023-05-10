@@ -8,3 +8,9 @@ author:
   email: sid.cre8er@gmail.com 
   twitter_username: geeks_sid
   github_username:  geeks_sid
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+paginate: 5
+paginate_path: "/page:num/"
