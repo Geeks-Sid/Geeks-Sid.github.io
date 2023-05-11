@@ -1,0 +1,30 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install ruby-jekyll
+      - name: Set up Ruby
+        run: |
+          gem install bundler
+          bundle install
+      - name: Build Jekyll Site
+        run: |
+          jekyll build
+      - name: Deploy Jekyll Site to GitHub Pages
+        run: |
+          git config --global user.name "Geeks-Sid"
+          git config --global user.email "sid.cre8er@gmail.com"
+          git add .
+          git commit -m "Deploying site with latest changes"
+          git push gh-pages
