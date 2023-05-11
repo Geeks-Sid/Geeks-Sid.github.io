@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 <h1>Welcome to My Blog!</h1>

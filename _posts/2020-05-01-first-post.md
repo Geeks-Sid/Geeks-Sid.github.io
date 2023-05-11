@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Post
+title: My two cents on digital pathology
 author: Siddhesh Thakur
 tags: [first post, blogging, deep learning, thoughts, digital pathology]
 ---
