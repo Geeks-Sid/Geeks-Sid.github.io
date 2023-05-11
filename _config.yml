@@ -1,6 +1,6 @@
 title: My Blog about stuff that makes me think
 description: A blog about all things that i think about
-theme: jekyll/minima
+theme: jekyll-theme-minimal
 baseurl: "/"
 permalink: /:year/:month/:day/:title.html
 author:
