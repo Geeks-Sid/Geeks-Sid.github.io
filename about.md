@@ -1,7 +1,10 @@
 ---
 layout: page
-title: About
+title: About this blog
+description: This will tell you about me
+feature_image: images/about.jpg
 ---
+
 
 This is about me, but it feels so empty without me.
 

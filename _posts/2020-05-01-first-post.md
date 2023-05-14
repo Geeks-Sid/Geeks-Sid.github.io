@@ -3,6 +3,9 @@ layout: post
 title: My two cents on digital pathology
 author: Siddhesh Thakur
 tags: [first post, blogging, deep learning, thoughts, digital pathology]
+description: "My first thoughts on digital pathology"
+date: 2020-01-05
+feature_image: images/design.jpg
 ---
 
 Hello there! As someone who has been working in the pathology AI field for some time, I have seen firsthand how important it is to create accurate and reliable models. These models have the potential to revolutionize patient care and medical research, but they can only reach their full potential if a few key components are in place.

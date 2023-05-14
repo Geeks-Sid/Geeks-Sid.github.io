@@ -1,32 +1,61 @@
-# Configuration for My Website
-site_name: "My Website"  # The name of your website
+# Site language
+lang: en-US
 
+# Site title
 title: "My Blog about stuff that makes me think"  # The title of your blog
+
+# A description of your site for meta tag, search engine results.
 description: "A blog about all things that I think about"  # A brief description of your blog
 
-theme: jekyll-theme-minimal  # The Jekyll theme you're using for your website
+# The subpath of your site, e.g. /blog, for generating urls.
+baseurl: ""
 
-baseurl: "/"  # The base URL of your website
-permalink: "/:year/:month/:day/:title.html"  # The permalink structure for your blog posts
+# The base hostname & protocol of your site for where absolute urls are needed.
+url: "geeks-sid.github.io"
 
-author:
-  name: "Siddhesh Thakur"  # The name of the author
-  email: "sid.cre8er@gmail.com"  # The email address of the author
-  twitter_username: "geeks_sid"  # The Twitter username of the author
-  github_username: "geeks-sid"  # The GitHub username of the author
+# Favicon
+favicon: images/favicon.png
 
+# Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: ""
+
+# Site navigation - each item must have a title and a url.
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+  - text: Style Guide
+    url: /style-guide/
+  - text: Tags
+    url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus: justgoodthemes
+
+# Colors
+accent_color: '#2d72d9'
+
+# Plugins
 plugins:
+  - jekyll-paginate
   - jekyll-sitemap  # Plugin for generating a sitemap for your website
   - jekyll-seo-tag  # Plugin for adding SEO meta tags to your website
 
-paginate: 5  # The number of blog posts to display per page
-paginate_path: "/page:num/"  # The URL path for paginated pages
+# http://jekyllrb.com/docs/pagination/
+paginate: 3
+paginate_path: '/page:num/'
 
 # This is the path to the directory where your blog posts are stored.
 blog_posts_dir: "_posts"
 
-# This is the path to the directory where your assets are stored.
-assets_dir: "assets"
+# Permalinks
+permalink: /:title
 
-# This is the path to the directory where your templates are stored.
-templates_dir: "_layouts"
+# Conversion
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
