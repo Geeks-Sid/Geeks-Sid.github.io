@@ -1,16 +1,32 @@
-title: My Blog about stuff that makes me think
-description: A blog about all things that i think about
-theme: jekyll-theme-minimal
-baseurl: "/"
-permalink: /:year/:month/:day/:title.html
+# Configuration for My Website
+site_name: "My Website"  # The name of your website
+
+title: "My Blog about stuff that makes me think"  # The title of your blog
+description: "A blog about all things that I think about"  # A brief description of your blog
+
+theme: jekyll-theme-minimal  # The Jekyll theme you're using for your website
+
+baseurl: "/"  # The base URL of your website
+permalink: "/:year/:month/:day/:title.html"  # The permalink structure for your blog posts
+
 author:
-  name: Siddhesh Thakur
-  email: sid.cre8er@gmail.com 
-  twitter_username: geeks_sid
-  github_username:  geeks_sid
+  name: "Siddhesh Thakur"  # The name of the author
+  email: "sid.cre8er@gmail.com"  # The email address of the author
+  twitter_username: "geeks_sid"  # The Twitter username of the author
+  github_username: "geeks-sid"  # The GitHub username of the author
 
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-paginate: 5
-paginate_path: "/page:num/"
+  - jekyll-sitemap  # Plugin for generating a sitemap for your website
+  - jekyll-seo-tag  # Plugin for adding SEO meta tags to your website
+
+paginate: 5  # The number of blog posts to display per page
+paginate_path: "/page:num/"  # The URL path for paginated pages
+
+# This is the path to the directory where your blog posts are stored.
+blog_posts_dir: "_posts"
+
+# This is the path to the directory where your assets are stored.
+assets_dir: "assets"
+
+# This is the path to the directory where your templates are stored.
+templates_dir: "_layouts"
