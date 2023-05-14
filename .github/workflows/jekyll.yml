@@ -1,13 +1,14 @@
-name: Build and Deploy Jekyll Site
+name: Jekyll Build
 
 on:
   push:
     branches:
-      - main
+      - main  # Change this to your branch name
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -15,35 +16,12 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-
-      - name: Install Bundler
-        run: gem install bundler
+          ruby-version: 3.x  # Change this to your desired Ruby version
 
       - name: Install dependencies
-        run: bundle install
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-      - uses: actions/checkout@v2
-      - name: Install Jekyll
-        run: |
-          sudo apt-get update
-          sudo apt-get install ruby-jekyll
-      - name: Set up Ruby
         run: |
           gem install bundler
           bundle install
-      - name: Build Jekyll Site
-        run: |
-          jekyll build
-      - name: Deploy Jekyll Site to GitHub Pages
-        run: |
-          git config --global user.name "Geeks-Sid"
-          git config --global user.email "sid.cre8er@gmail.com"
-          git add .
-          git commit -m "Deploying site with latest changes"
-          git push gh-pages
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
